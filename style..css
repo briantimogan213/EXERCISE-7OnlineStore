@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name h1{
+  font-size: 3em;
+  text-transform: uppercase
+}
+.name a{
+  color: rgb(197, 156, 81);
+  text-decoration: none;
+}
+.name h1 span{
+  color: crimson;
+}
+#header{
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;;
+}
+#header .container{
+  min-height: 8vh;
+}
+.header .navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  padding: 0 14px;
+  background-color: #29323c;
+}
+#header .navlist ul{
+    list-style: none;
+
+}
+#header .navlist ul li{
+  display: inline-block;
+  padding: 10px;
+}
+#header .navlist ul a{
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+}
+#header .navlist ul li:hover a{
+  color: crimson;
+}
+
+#home{
+  background-image: url(images/tshirtstore.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+#home::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: .4;
+  z-index: -1;
+}
+#home h1{
+  font-size: 4rem;
+  color: white;
+}
+#home .container span{
+  color: crimson;
+}
+#home .container h2{
+  font-size: 3rem;
+  color: rgb(243,  183, 89);
+}
+#About{
+  margin: 5px;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+
+}
+
+#About .flexbox{
+  padding: 0;
+  margin: 50px;
+}
+#About h4{
+  text-align: left;
+  margin: 30px;
+}
+.flex li{
+  padding: 20px;
+
+}
+.flex{
+  margin: 30px;
+  text-align: left;
+}
+#About span{
+  color: crimson;
+}
+#About h2{
+  font-size: 3.5em;
+  font-weight: 300;
+  margin: 50px;
+  color: rgb(234,  183, 89);
+}
+#product{
+  margin: 20px;
+  padding: 60px;
+  text-align: center;
+
+}
+#product .h2size{
+  text-align: center;
+  font-size: 4em;
+}
+#product span{
+  color: crimson;
+}
+.balig{
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  width: 30%;
+}
+.balig p{
+  padding: 10px;
+  font-size: 2.5em;
+}
+.baligya img{
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+.baligya .button{
+  background-color: white;
+  color: black;
+  padding: 16px 32px;
+  border-radius: 20px;
+  font-size: 1.5em;
+  margin: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.baligya .button:hover{
+  background-color: rgb(133, 16, 39);
+  color: white;
+}
+#contacts{
+  padding: 30px;
+  text-align: center;
+}
+.cuntact{
+  max-width: 800px;
+  margin:0 auto;
+}
+.cuntact h1{
+  color: crimson;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+#contacts .wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+#contacts .form{
+  text-align: left;
+}
+#contacts .form h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.form-group{
+  margin-bottom: 20px;
+}
+input, textarea{
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  color: #333;
+}
+input:focus,
+textarea:focus{
+  outline: none;
+  box-shadow: 0 0 8px #bbb;
+}
+#contacts button{
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3 ease;
+}
+button:hover{
+  background-color: #45a049;
+}
+#contacts .info{
+  text-align: center;
+}
+#contacts .info h3{
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+#contacts .info p{
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #555;
+}
+#contacts .info i{
+  color: #4caf50;
+  margin-right: 10px;
+}
+footer{
+
+  background-color: #555;
+  text-align: center;
+  width: 100%;
+  height: 5vh;
+}
+footer h4{
+  padding: 10px;
+  font-size: 1.5em;
+  color: rgb(197, 156, 81);
+}
+
+@media only screen and (max-width: 390px){
+  .header{
+    display: block;
+    width: 100%;
+  }
+  #home{
+    display: block;
+    width: 390;
+    height: 60vh;
+  }
+  #home .pos{
+    display: block;
+    margin-bottom: 200px;
+  }
+  #home h1{
+    font-size: 3rem;
+    color: white;
+  }
+  #home .container h2{
+    font-size: 2rem;
+    color: rgb(243,  183, 89);
+  }
+  .name h1{
+    font-size: 2em;
+  }
+
+  .header navbar{
+    display: block;
+    width: 390px;
+    height: 7vh;
+  }
+
+  #header .navlist ul a{
+    font-size: 1em;
+  }
+  #About{
+    font-size: 1.5rem;
+  }
+  .balig{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #product{
+    padding: 45px;
+  }
+  #product .h2size{
+    text-align: center;
+    font-size: 2em;
+  }
+  .baligya{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    padding: 16px;
+    background-color: #f1f1f1;
+  }
+  .baligya p{
+    font-size: 1.5em;
+    padding: 5px;
+  }
+  .baligya .button{
+    font-size: 1em;
+  }
+  .cuntact{
+    padding: 20px;
+  }
+  #contacs .wrapper{
+    grid-template-columns: 1fr;
+  }
+  footer{
+    display: block;
+    width: 390px;
+  }
+  footer h4{
+    font-size: 1em;
+
+  }
+}
